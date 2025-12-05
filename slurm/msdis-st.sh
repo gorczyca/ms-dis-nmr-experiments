@@ -2,7 +2,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --time=100:00:00
-#SBATCH --mem-per-cpu=32000
+#SBATCH --mem-per-cpu=16000
 #SBATCH --job-name=msdis-st
 #SBATCH --mail-type=end
 #SBATCH --mail-user=pigo271b@tu-dresden.de
