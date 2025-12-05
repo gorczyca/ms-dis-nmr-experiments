@@ -30,4 +30,6 @@ CONFIG['nmsl']['local'] = '/home/piotr/Dresden/ms-dis-nmr-experiments/dependenci
 CONFIG['nmsl']['hpc'] = '/data/horse/ws/pigo271b-nmr/nmr-exp/dependencies/solvers/nm-s4fsl-asp/run.sh /dev/shm/conda_envs_pigo271b/potassco_env/bin/clingo {instance}'
 CONFIG['nmsl']['instances'] = 'instances/nmsl'
 
-# /home/piotr/anaconda3/envs/potassco_env/bin/python /home/piotr/Dresden/ms-dis-nmr-experiments/dependencies/solvers/MS-DIS/msdis.py -p /home/piotr/Dresden/ms-dis-nmr-experiments/dependencies/instances/aba-adm-no-stb.lp -b "tt(ta). at(dabf)." -f aba
+
+# nmsl
+# /data/horse/ws/pigo271b-nmr/nmr-exp/dependencies/solvers/nm-s4fsl-asp/run.sh /dev/shm/conda_envs_pigo271b/potassco_env/bin/clingo /data/horse/ws/pigo271b-nmr/nmr-exp/dependencies/instances/nmsl/instance_1_goal-s1-a2.lp
