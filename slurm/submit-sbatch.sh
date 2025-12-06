@@ -20,9 +20,9 @@
 
 # APPROX
 FILES=(
-    "msdis-adm.sh" 
-    "msdis-st.sh" 
-    "nmsl.sh" 
+    "msdis-adm-s.sh" 
+    "msdis-st-s.sh" 
+    "nmsl-s.sh" 
 )
 
 for FILE in "${FILES[@]}"; do

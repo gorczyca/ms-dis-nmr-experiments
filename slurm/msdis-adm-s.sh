@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
-#SBATCH --time=100:00:00
-#SBATCH --mem-per-cpu=16000
+#SBATCH --time=24:00:00
+#SBATCH --mem-per-cpu=4000
 #SBATCH --job-name=msdis-adm
 #SBATCH --mail-type=end
 #SBATCH --mail-user=pigo271b@tu-dresden.de
