@@ -9,7 +9,7 @@
 
 
 
-srun --exclusive --ntasks=1 /dev/shm/conda_envs_pigo271b/potassco_env/bin/python /data/horse/ws/pigo271b-nmr/nmr-exp/ms-dis-nmr-experiments/main.py -s nmsl -u hpc
+srun --exclusive --ntasks=1 /data/horse/ws/pigo271b-nmr/nmr-exp/conda_envs/msdis_env/bin/python /data/horse/ws/pigo271b-nmr/nmr-exp/ms-dis-nmr-experiments/main.py -s nmsl -u hpc
 
 echo "waiting for all jobs to complete"
 wait
