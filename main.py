@@ -24,6 +24,8 @@ def get_subprocess_answer(command_str):
         
     except subprocess.TimeoutExpired:
         return None, float(TIMEOUT)
+    except subprocess.CalledProcessError:
+        return 'ERROR', round(time.time() - start_time, 2)
 
    
 if __name__ == '__main__':
