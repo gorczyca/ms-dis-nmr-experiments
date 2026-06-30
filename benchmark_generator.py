@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from typing import List, Set, Tuple
-import random, os, csv, shutil
+import random, os, csv, shutil, itertools
 
 
 OUTPUT_METADATA = '/home/piotr/Dresden/ms-dis-nmr-experiments/dependencies/instances/instances_metadata.csv'
@@ -159,15 +159,16 @@ def _clear_dir(path: str) -> None:
 
 
 if __name__ == "__main__":
-    N_PROGRAMS_PER_CONFIG = 3
+    N_PROGRAMS_PER_CONFIG = 5
 
-    configs = [
-        # (n_atoms, n_standpoints, n_rules_per_standpoint, max_body),
-        (8, 1, 2, 2),
-        (12, 2, 3, 2),
-        (16, 3, 4, 2),
-        (20, 4, 5, 2),
-    ]
+    n_atoms_options = [8, 16, 24]
+    n_standpoints_options = [1, 2, 4]
+    n_rules_per_sp_options = [2, 4]
+    max_body_options = [2, 4, 8]
+
+    configs = list(itertools.product(
+        n_atoms_options, n_standpoints_options, n_rules_per_sp_options, max_body_options
+    ))
 
     _clear_dir(OUTPUT_INSTANCES_MSDIS)
     _clear_dir(OUTPUT_INSTANCES_NMSL)
